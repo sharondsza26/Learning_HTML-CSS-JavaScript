@@ -1,0 +1,18 @@
+$("#hide-red-button").click(function(){
+    $(".red").hide();
+});
+$("#show-red-button").click(function(){
+    $(".red").show();
+});
+$("#hide-blue-button").click(function(){
+    $(".blue").hide();
+});
+$("#show-blue-button").click(function(){
+    $(".blue").show();
+});
+$("#hide-green-button").click(function(){
+    $(".green").hide();
+});
+$("#show-green-button").click(function(){
+    $(".green").show();
+});
