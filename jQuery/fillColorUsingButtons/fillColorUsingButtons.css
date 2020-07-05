@@ -1,0 +1,23 @@
+/* Do not write any CSS for this excercise */
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+   }
+   
+   .box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin: 5px;
+   }
+   
+   .buttons {
+    margin-top: 5px;
+    padding: 20px;
+    border: 1px solid black;
+   }
+   .buttons div {
+    margin-bottom: 10px;   
+   }
