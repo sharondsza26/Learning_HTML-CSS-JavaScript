@@ -1,0 +1,65 @@
+#chat-window {
+    height: 400px;
+    border: 1px solid black;   
+}
+
+.message {
+    margin: 5px;
+    padding: 10px;
+    font-family: Arial;
+}
+
+.message.received {
+    background-color: lightgray;
+    text-align: left;
+}
+.message.sent {
+    background-color: lightgreen;
+   text-align: right;
+}
+
+.message.received:before {
+    content: "Your Friend - ";
+    font-weight: bold;
+}
+
+.message.sent:after {
+    content: " - You";
+    font-weight: bold;
+}
+
+.messengers {
+ display: flex;
+ margin-top: 10px;
+ padding: 10px;
+}
+
+.senders {
+ margin: 20px;   
+}
+
+.message-input {
+    display: block;
+    margin-top: 10px;
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.send-button {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+}
+
+#send-your-message {
+ background-color: lightgreen;   
+}
+#send-friends-message {
+ background-color: lightgray;   
+}
+.sender-title {
+    font-weight: bold;
+    font-family: Arial;
+}

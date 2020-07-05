@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat Bot</title>
+        <link rel="stylesheet" type="text/css" href="chatApp.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="chat-window">
+            <div class="message received">Yo!</div>
+            <div class="message sent">What's up?</div>
+        </div>
+        <div class="messengers">
+            <div class="senders">
+                <div class="sender-title">Your Friend</div>
+                <input id="friends-message" class="message-input" >
+                <button id="send-friends-message" class="send-button">Send</button>  
+            </div>
+            <div class="senders">
+                <div class="sender-title">You</div>
+                <input id="your-message" class="message-input" >
+                <button id="send-your-message" class="send-button">Send</button>
+            </div>
+        </div>
+        <script src="chatApp.js"> </script>
+    </body>
+</html>
