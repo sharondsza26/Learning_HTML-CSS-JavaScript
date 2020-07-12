@@ -1,0 +1,47 @@
+body{
+    background-color:#edfcfa;
+    font-size: large;
+}
+
+.image{
+    border: solid #017861 2px;
+    display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 45%;
+}
+p{
+    font-size:17px;
+    text-align:center;
+}
+
+table{
+    border:0;
+    table-layout: fixed;
+    margin: auto;
+}
+td{
+    word-wrap: break-word;
+}
+input{
+    height:20px;
+}
+.label{
+	font-weight:bold;
+	font-size: 15px;
+	font-family: sans-serif;
+}
+.div{
+    margin: 200px;
+}
+h1{
+	font-family: 'Courier New', Courier, monospace;
+	text-align: center;
+}
+.done{
+	border: solid blue 1px;
+	background-color:white;
+	height: 40px;
+	width: 70px;
+	float:right;
+}
