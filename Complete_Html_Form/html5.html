@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Form</title>
+        <link rel="stylesheet" type="text/css" href="html5.css">
+    </head> 
+    <body>
+
+        <!-- image -->
+        <img class="image" src="https://t3.ftcdn.net/jpg/02/20/14/38/240_F_220143804_fc4xRygvJ8bn8JPQumtHJieDN4ORNyjs.jpg">
+
+        <!--Introduction-->
+
+        <p>This is a sign up form that I chose to build.</p> 
+        <p>I chose this because it's one of the most common forms we come across.</p>
+        <p>Also, I thought i could use it as a template while building other projects in the future.</p>
+
+        <!--Form-->
+
+    <form action="#">
+        <div class="div">
+        <h1>Fill Sign-Up Form</h1>
+        <table>
+
+        <!--First Name-->
+        <tr>
+            <td class="label">First Name: </td>
+        </tr>
+        <tr>
+            <td class="input"><input placeholder="John" type="text" id="fn" onblur="validateFn();"></td>
+            <td class="feedbk"><span id="fnPrompt"></span></td>
+        </tr>
+
+        <!--Last Name-->
+        <tr>
+            <td class="label">Last name: </td>
+        </tr>
+        <tr>
+            <td class="input"><input placeholder="Doe" type="text" id="ln" onblur="validateLn();"></td>
+            <td class="feedbk"><span id="lnPrompt"></span></td>
+        </tr>
+
+        <!-- Username -->
+
+        <tr>
+            <td class="label">Username: </td>
+        </tr>
+        <tr>
+            <td class="input"><input placeholder="johndoe09" type="text" id="un" onblur="validateUn();"></td>
+            <td class="feedbk"><span id="unPrompt"></span></td>
+        </tr>
+
+        <!-- Password -->
+        <tr>
+            <td class="label">Password: </td>
+        </tr>
+        <tr>
+            <td class="input"><input type="password" id="pass1"></td>
+            <td class="feedbk"><span id="pass1Prompt"></span></td>
+        </tr>
+
+        <!-- Confirm Password -->
+        <tr>
+            <td class="label">Confirm Password: </td>
+        </tr>
+        <tr>
+            <td class="input"><input type="password" id="pass2" onblur="validatePass();"></td>
+            <td class="feedbk"><span id="pass2Prompt"></span></td>
+        </tr>
+
+        <!-- Phone Number -->
+         <tr>
+            <td class="label">Phone Number: </td>
+        </tr>
+        <tr>
+            <td class="input"><input placeholder="xxx-xxx-xxxx" type="number" id="pn" onblur="checkPn();"></td>
+            <td class="feedbk"><span id="pnPrompt"></span><br></td>
+        </tr>
+
+        <!-- Birthday -->
+        <tr>
+            <td class="label">Birthday:<br></td>
+        </tr>
+        <tr>
+            <td><input type="date" name="birthday"><br></td>
+        </tr>
+
+        <!--Age-->
+        <tr>
+            <td class="label">Please select your age:</td>
+        </tr>
+        <tr>
+            <td><input type="radio" id="age1" name="age" value="30">0 - 30</td>
+        </tr>
+        <tr>
+            <td><input type="radio" id="age2" name="age" value="60">31 - 60</td>
+        </tr>
+        <tr>
+            <td><input type="radio" id="age3" name="age" value="100">61 - 100</td>
+        </tr>
+
+        <!-- Skills -->
+        <tr>
+            <td class="label">Skills you have:</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="skills" value="HTML">HTML</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="skills" value="Css">CSS</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="skills" value="Javascript">Javascript</td>
+        </tr>
+
+        <!-- Choose Theme -->
+        <tr>
+            <td class="label">Choose a Theme:</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="theme" value="light" onclick="changeToLight();"> Light</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="theme" value="dark"   onclick="changeToDark();"> Dark</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="theme" value="default" onclick="changeToDefault();"> Default</td>
+        </tr>
+           
+        </table>
+
+        <button class="done" onclick="done();">DONE</button>
+    </div>
+    </form>
+
+    <script src="html5.js"></script>
+    </body>
+</html>
